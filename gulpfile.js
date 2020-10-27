@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
-
+var ngrok = require('ngrok');
 
 const nodemonTask = (done) => {
   var started = false;
@@ -23,6 +23,16 @@ const serve = (done) => {
     proxy: "localhost:5000",
     files: '',
     port: 7000,
+  }, function(err, bs) {
+    ngrok.connect(bs.options.get('port'), (err, url) => {
+      if (err) {
+        console.error('Error while connecting Ngrok', err);
+        return new Error('Ngrok Failed');
+      } else {
+        console.log('Tunnel URL -> ', url);
+        console.log('Tunnel Inspector ->  http://127.0.0.1:4040');
+      }
+    });
   });
 
   gulp.watch("views/*").on('change', browserSync.reload);

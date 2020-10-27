@@ -12,7 +12,8 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "gulp-nodemon": "^2.5.0"
+    "gulp-nodemon": "^2.5.0",
+    "ngrok": "^3.3.0"
   },
   "scripts": {
     "start": "node index.js"
