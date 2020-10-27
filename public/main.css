@@ -1,0 +1,47 @@
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 { 
+  text-align: center;
+}
+
+.centerBlock { 
+  background-color: whitesmoke;
+  display: flex;
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
+}
+.centerBlock>*{
+  margin:auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-top: 1rem;
+}
+
+footer > a {
+  outline: 1px dashed blue;
+  color: inherit;
+  text-decoration: none;
+}
+
+footer > a:hover {
+  outline: none;
+  border-bottom: 1px dashed blue;
+  margin-bottom: -1px
+}
+
+footer > .fa-heart {
+  color: red;
+}

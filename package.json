@@ -1,0 +1,15 @@
+{
+  "name": "TimestampMicroservice",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice",
+  "main": "index.js",
+  "repository": "https://github.com/AarynSmith/Fcc-Timestamp-Microservice.git",
+  "author": "AarynSmith <4387096+AarynSmith@users.noreply.github.com>",
+  "license": "GPLv3",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0"
+  }
+}
